@@ -15,8 +15,8 @@ const App = () => {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/" element={<SharedLayout />}>
             <Route path="dashboard" element={<DashboardPage />} />
-            <Route path="products" element={<ProductsPage />} />
             <Route path="orders" element={<OrdersPage />} />
+            <Route path="products" element={<ProductsPage />} />
             <Route path="suppliers" element={<SuppliersPage />} />
             <Route path="customers" element={<CustomersPage />} />
           </Route>

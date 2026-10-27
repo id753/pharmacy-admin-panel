@@ -2,11 +2,11 @@ import { NavLink } from "react-router-dom";
 import css from "./SidebarMenu.module.css";
 
 const menuItems = [
-  { path: "/dashboard", label: "Dashboard" },
-  { path: "/products", label: "Products" },
-  { path: "/orders", label: "Orders" },
-  { path: "/suppliers", label: "Suppliers" },
-  { path: "/customers", label: "Customers" },
+  { path: "/dashboard", label: "Dashboard", icon: "icon-dash" },
+  { path: "/orders", label: "Orders", icon: "icon-order" },
+  { path: "/products", label: "Products", icon: "icon-product" },
+  { path: "/suppliers", label: "Suppliers", icon: "icon-supplier" },
+  { path: "/customers", label: "Customers", icon: "icon-customer" },
 ];
 
 const SidebarMenu = () => {
@@ -16,11 +16,14 @@ const SidebarMenu = () => {
         <NavLink
           key={item.path}
           to={item.path}
+          title={item.label}
           className={({ isActive }) =>
             isActive ? `${css.link} ${css.active}` : css.link
           }
         >
-          {item.label}
+          <svg width="12" height="12">
+            <use href={`/symbol-defs.svg#${item.icon}`} />
+          </svg>
         </NavLink>
       ))}
     </nav>
