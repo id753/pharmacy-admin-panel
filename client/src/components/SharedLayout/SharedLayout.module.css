@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #7fb9f3;
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.pageContent {
+  flex: 1;
+  padding: 24px;
+  background-color: #f06b9c;
+}
