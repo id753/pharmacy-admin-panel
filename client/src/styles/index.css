@@ -1,0 +1,24 @@
+:root {
+  --color-main-black: #1d1e21;
+  --color-accent: #59b17a;
+  --color-accent-hover: #3f945f;
+  --color-accent-2: #e85050;
+
+  --color-text: #1d1e2166;
+  --color-background: #e7f1ed;
+  --color-background-2: #1d1e211a;
+  --color-background-3: #f9f9f9;
+  --color-white: #ffffff;
+
+  --status-completed: #59b17a;
+  --status-confirmed: #8059e4;
+  --status-pending: #f79042;
+  --status-cancelled: #e85050;
+  --status-processing: #70a6e8;
+
+  --status-completed-bg: #59b17a1a;
+  --status-confirmed-bg: #8059e41a;
+  --status-pending-bg: #f790421a;
+  --status-cancelled-bg: #e850501a;
+  --status-processing-bg: #70a6e81a;
+}
