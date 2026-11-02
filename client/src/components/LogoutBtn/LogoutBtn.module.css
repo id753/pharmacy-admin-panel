@@ -1,0 +1,13 @@
+.logoutBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-accent);
+  color: #94a3b8;
+  text-decoration: none;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
