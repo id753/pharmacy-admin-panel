@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: var(--background-2);
+  border-right: 1px solid var(--text-2);
+  width: 100%;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.subWrapper {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--text-2);
+}
+
+.subWrapper > *:first-child::after {
+  content: '|';
+  margin-left: 3px;
+  color: var(--text-2);
+}

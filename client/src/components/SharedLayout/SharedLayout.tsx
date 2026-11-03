@@ -1,14 +1,14 @@
-import css from "./SharedLayout.module.css";
-import Sidebar from "../Sidebar/Sidebar";
-import Header from "../Header/Header";
-import { Outlet } from "react-router-dom";
+import css from './SharedLayout.module.css';
+import Sidebar from '../Sidebar/Sidebar';
+import Header from '../Header/Header';
+import { Outlet } from 'react-router-dom';
 
 const SharedLayout = () => {
   return (
-    <div className={css.container}>
-      <Sidebar />
+    <div className={css.layoutWrapper}>
+      <Header />
       <div className={css.mainContent}>
-        <Header />
+        <Sidebar />
         <main className={css.pageContent}>
           <Outlet />
         </main>

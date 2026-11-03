@@ -1,0 +1,12 @@
+.logoLink {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logoImg {
+  display: block;
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}

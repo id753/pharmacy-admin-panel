@@ -2,12 +2,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  padding: 0;
   width: 44px;
   height: 44px;
-  background-color: var(--color-accent);
-  color: #94a3b8;
+  background-color: var(--accent);
   text-decoration: none;
   border: none;
   border-radius: 50%;
-  transition: all 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.logoutBtn:hover {
+  background-color: var(--accent-hover);
+}
+.logoutIcon {
+  fill: var(--background-3);
 }

@@ -1,14 +1,13 @@
 :root {
-  --color-main-black: #1d1e21;
-  --color-accent: #59b17a;
-  --color-accent-hover: #3f945f;
-  --color-accent-2: #e85050;
-
-  --color-text: #1d1e2166;
-  --color-background: #e7f1ed;
-  --color-background-2: #1d1e211a;
-  --color-background-3: #f9f9f9;
-  --color-white: #ffffff;
+  --main-black: #1d1e21;
+  --accent: #59b17a;
+  --accent-hover: #3f945f;
+  --accent-2: #e85050;
+  --text: #dcdddf;
+  --text-2: #1d1e2166;
+  --background: #e7f1ed;
+  --background-2: #f7f8fa;
+  --background-3: #fff;
 
   --status-completed: #59b17a;
   --status-confirmed: #8059e4;
@@ -21,6 +20,8 @@
   --status-pending-bg: #f790421a;
   --status-cancelled-bg: #e850501a;
   --status-processing-bg: #70a6e81a;
+
+  --font-family: 'Inter', sans-serif;
 }
 
 /* !reset.css */
@@ -93,4 +94,13 @@ select {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--font-family);
+  color: var(--main-black);
 }
