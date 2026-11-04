@@ -1,11 +1,12 @@
 .sidebar {
-  width: 80px;
-  background-color: #1e293b;
-  color: #fff;
   display: flex;
   flex-direction: column;
+  width: 80px;
+  background: var(--background-2);
+  color: #fff;
   height: 100vh;
   position: sticky;
   top: 0;
-  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(29, 30, 33, 0.1);
+  border-top: 1px solid rgba(29, 30, 33, 0.1);
 }
