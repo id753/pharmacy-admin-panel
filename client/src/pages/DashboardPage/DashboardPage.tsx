@@ -7,8 +7,10 @@ const DashboardPage = () => {
   return (
     <div className={css.container}>
       <Statistics />
-      <RecentCustomers />
-      <IncomeExpenses />
+      <div className={css.subContainer}>
+        <RecentCustomers />
+        <IncomeExpenses />
+      </div>
     </div>
   );
 };

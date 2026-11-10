@@ -1,3 +1,8 @@
 .container {
   margin-left: 40px;
 }
+
+.subContainer {
+  display: flex;
+  gap: 19px;
+}
