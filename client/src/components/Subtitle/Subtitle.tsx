@@ -1,14 +1,15 @@
-import { Link } from "react-router-dom";
-import css from "./Subtitle.module.css";
+import { Link } from 'react-router-dom';
+import css from './Subtitle.module.css';
 
 interface SubtitleProps {
   text: string;
   to?: string;
+  tooltip?: string;
 }
-const Subtitle = ({ text, to }: SubtitleProps) => {
+const Subtitle = ({ text, to, tooltip }: SubtitleProps) => {
   if (to) {
     return (
-      <Link to={to} className={css.link}>
+      <Link to={to} title={tooltip} className={css.link}>
         {text}
       </Link>
     );
