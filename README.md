@@ -1,4 +1,4 @@
-# 💊 E-Pharmacy Admin Dashboard (in progress...)
+# 💊 E-Pharmacy Admin Dashboard ![Status](https://img.shields.io/badge/status-in%20progress-yellow)
 
 A full-stack administrative web application designed for a medical store management system. It features a robust React frontend and a Node.js/Express backend connected to MongoDB, providing secure authentication, real-time data filtering, and comprehensive inventory, order, and supplier management.
 
