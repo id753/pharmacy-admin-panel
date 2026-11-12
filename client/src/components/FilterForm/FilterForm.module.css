@@ -1,0 +1,63 @@
+.filterForm {
+  display: flex;
+  gap: 14px;
+  margin-top: 75px;
+  margin-bottom: 20px;
+}
+
+.input {
+  border: 1px solid var(--border-color);
+  border-radius: 60px;
+  width: 224px;
+  height: 44px;
+  box-shadow: 0 -1px 5px 0 rgba(71, 71, 71, 0.05);
+  background: var(--background-3);
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--main-black);
+
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 18px;
+}
+
+.input::placeholder {
+  color: var(--text-2);
+}
+
+.input:focus {
+  color: var(--main-black);
+  border: 1px solid var(--accent);
+  outline: none;
+}
+
+.button {
+  display: flex;
+  gap: 8px;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+
+  border-radius: 60px;
+  padding: 13px 30px;
+  width: 116px;
+  height: 44px;
+  background: var(--accent);
+  align-items: center;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--background-3);
+  text-align: center;
+}
+
+.button:hover {
+  background-color: var(--accent-hover);
+}
+
+.filterIcon {
+  fill: var(--background-3);
+}

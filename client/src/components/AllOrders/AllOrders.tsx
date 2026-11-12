@@ -1,6 +1,10 @@
 import OrderRow, { type OrderRowProps } from '../OrderRow/OrderRow';
 import css from './AllOrders.module.css';
 
+interface AllOrdersProps {
+  filterQuery: string;
+}
+
 const ordersData: OrderRowProps[] = [
   {
     id: 1,
@@ -53,7 +57,12 @@ const ordersData: OrderRowProps[] = [
     status: 'Confirmed',
   },
 ];
-const AllOrders = () => {
+
+const AllOrders = ({ filterQuery }: AllOrdersProps) => {
+  const filteredOrders = ordersData.filter((item) =>
+    item.name.toLowerCase().includes(filterQuery.toLowerCase())
+  );
+
   return (
     <div className={css.container}>
       <h2 className={css.title}>All orders</h2>
@@ -68,7 +77,8 @@ const AllOrders = () => {
             <th>Status</th>
           </tr>
         </thead>
-        <tbody>
+
+        {/* <tbody>
           {ordersData.map((item) => (
             <OrderRow
               key={item.id}
@@ -80,6 +90,12 @@ const AllOrders = () => {
               price={item.price}
               status={item.status}
             />
+          ))}
+        </tbody> */}
+
+        <tbody>
+          {filteredOrders.map((item) => (
+            <OrderRow key={item.id} {...item} />
           ))}
         </tbody>
       </table>

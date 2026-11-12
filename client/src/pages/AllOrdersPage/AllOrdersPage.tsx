@@ -1,12 +1,20 @@
+import { useState } from 'react';
 import AllOrders from '../../components/AllOrders/AllOrders';
-import UsernameFilter from '../../components/UsernameFilter/UsernameFilter';
+import FilterForm from '../../components/FilterForm/FilterForm';
 import css from './AllOrdersPage.module.css';
 
 const AllOrdersPage = () => {
+  const [filterQuery, setFilterQuery] = useState('');
+
   return (
     <div className={css.container}>
-      <UsernameFilter />
-      <AllOrders />
+      <FilterForm
+        placeholder="User Name"
+        onFilter={(filterQuery) => setFilterQuery(filterQuery)}
+        // onFilter={setFilterQuery}
+      />
+
+      <AllOrders filterQuery={filterQuery} />
     </div>
   );
 };
