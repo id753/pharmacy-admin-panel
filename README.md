@@ -4,7 +4,7 @@ A full-stack administrative web application designed for a medical store managem
 
 ---
 
-### [Live Demo (In Progress)](pharmacy-admin-panel-dun.vercel.app)
+### [Live Demo (In Progress)](https://pharmacy-admin-panel-dun.vercel.app/)
 
 ## ✨ Features
 
