@@ -1,4 +1,4 @@
-import css from "./CustomersPage.module.css";
+// import css from "./CustomersPage.module.css";
 
 const CustomersPage = () => {
   return <div></div>;

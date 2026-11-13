@@ -13,8 +13,8 @@ interface FilterFormProps {
 const FilterForm = ({ placeholder, onFilter }: FilterFormProps) => {
   const { register, handleSubmit } = useForm<FilterInputs>();
 
-  // const onSubmit: SubmitHandler<FilterInputs> = (data) => {
-  const onSubmit = (data: FilterInputs) => {
+  const onSubmit: SubmitHandler<FilterInputs> = (data) => {
+    // const onSubmit = (data: FilterInputs) => {
     onFilter(data.searchQuery.trim());
   };
 
