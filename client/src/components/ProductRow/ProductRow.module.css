@@ -1,0 +1,66 @@
+.row {
+  position: relative;
+}
+
+.row td {
+  padding: 20px;
+  font-family: var(--font-family);
+  vertical-align: middle;
+  border-right: 1px solid var(--border-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--main-black);
+}
+
+.row::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  background-color: var(--border-color);
+}
+.row:last-child::after {
+  display: none;
+}
+.row:last-child td {
+  border-bottom: none;
+}
+
+.row td:last-child {
+  border-right: none;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.editButton,
+.deleteButton {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+}
+
+.editButton {
+  border: 1px solid rgb(from var(--accent) r g b / 50%);
+}
+.deleteButton {
+  border: 1px solid rgb(from var(--accent-2) r g b / 50%);
+}
+
+.editIcon {
+  fill: var(--accent);
+}
+
+.deleteIcon {
+  fill: var(--accent-2);
+}
