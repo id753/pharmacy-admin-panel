@@ -1,4 +1,4 @@
-import css from './ProductModal.module.css';
+// import css from './ProductModal.module.css';
 
 interface AddNewProductProps {
   onClose: () => void;
