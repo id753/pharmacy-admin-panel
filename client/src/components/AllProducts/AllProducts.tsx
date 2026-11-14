@@ -33,7 +33,7 @@ const productsData = [
 
 const AllProducts = ({ filterQuery }: AllProductsProps) => {
   const filteredProducts = productsData.filter((item) =>
-    item.name.toLocaleLowerCase().includes(filterQuery.toLocaleLowerCase())
+    item.name.toLowerCase().includes(filterQuery.toLowerCase())
   );
   return (
     <div className={css.container}>

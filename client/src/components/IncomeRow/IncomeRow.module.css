@@ -10,17 +10,17 @@
   text-align: center;
 }
 .badgeIncome {
-  background: rgba(89, 177, 122, 0.1);
+  background: var(--status-completed-bg);
   color: var(--accent);
 }
 
 .badgeExpense {
-  background: rgba(232, 80, 80, 0.1);
+  background: var(--status-cancelled-bg);
   color: var(--accent-2);
 }
 
 .badgeError {
-  background: rgba(29, 30, 33, 0.1);
+  background: var(--border-color);
   color: var(--main-black);
 }
 
