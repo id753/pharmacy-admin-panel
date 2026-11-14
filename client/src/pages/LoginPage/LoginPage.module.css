@@ -129,6 +129,7 @@
   line-height: 129%;
   color: var(--background-3);
   margin-top: 40px;
+  transition: background-color 0.2s ease-in-out;
 }
 .submitBtn:hover,
 .submitBtn:focus {

@@ -1,0 +1,19 @@
+.addBtn {
+  margin-top: 75px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(from var(--accent) r g b / 50%);
+  border-radius: 60px;
+  padding: 13px 30px;
+  height: 44px;
+  transition: border 0.2s ease-in-out;
+
+  background-color: transparent;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--main-black);
+}
+.addBtn:hover {
+  border: 1px solid var(--accent);
+}

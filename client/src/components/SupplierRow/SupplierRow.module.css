@@ -74,8 +74,14 @@
   color: var(--accent);
 
   border: 1px solid rgb(from var(--accent) r g b / 50%);
+    transition: border 0.2s ease-in-out;
+
 }
 
 .editIcon {
   fill: var(--accent);
+}
+
+.editButton:hover {
+  border: 1px solid var(--accent);
 }

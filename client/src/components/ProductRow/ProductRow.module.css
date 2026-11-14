@@ -52,9 +52,11 @@
 
 .editButton {
   border: 1px solid rgb(from var(--accent) r g b / 50%);
+  transition: border 0.2s ease-in-out;
 }
 .deleteButton {
   border: 1px solid rgb(from var(--accent-2) r g b / 50%);
+  transition: border 0.2s ease-in-out;
 }
 
 .editIcon {
@@ -63,4 +65,11 @@
 
 .deleteIcon {
   fill: var(--accent-2);
+}
+
+.editButton:hover {
+  border: 1px solid var(--accent);
+}
+.deleteButton:hover {
+  border: 1px solid var(--accent-2);
 }
